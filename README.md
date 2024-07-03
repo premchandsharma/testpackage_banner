@@ -11,29 +11,27 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Create a simple overlay banner using an image link.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+You can create a simple overlay banner at the bottom of the screen.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Import the package from pub.dev
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Create a variable with the banner url and then call the showBannerOverlay method with the parameters context and the banner Url.
 
 ```dart
-const like = 'sample';
+final String bannerUrl =
+      'https://www.firstsouth.com/files/firstsou19/1/image/Website%20Header%20Images/051823_FS_WebHeaderImage-CDIRA.jpg.webp';
+
+@override
+  void initState() {
+    WidgetsBinding.instance
+        .addPostFrameCallback((_) => showBannerOverlay(context, bannerUrl));
+  }
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
