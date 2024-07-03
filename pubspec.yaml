@@ -1,7 +1,7 @@
 name: testpackage_banner
 description: "Create a simple overlay banner."
 version: 0.0.1
-homepage:
+homepage: https://github.com/premchandsharma/testpackage_banner
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
