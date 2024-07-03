@@ -26,6 +26,8 @@ Import the package from pub.dev
 Create a variable with the banner url and then call the showBannerOverlay method with the parameters context and the banner Url.
 
 ```dart
+import 'package:flutter/material.dart';
+
 final String bannerUrl =
       'https://www.firstsouth.com/files/firstsou19/1/image/Website%20Header%20Images/051823_FS_WebHeaderImage-CDIRA.jpg.webp';
 
